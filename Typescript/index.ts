@@ -17,3 +17,12 @@ let logged:boolean=false;
 
 //understood also "any" keyword and why it should be used sparingly
 
+
+//functions
+
+function addtwo(num:number)
+{
+    return num+2;
+}
+
+addtwo(2);
