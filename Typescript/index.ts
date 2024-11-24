@@ -26,3 +26,39 @@ function addtwo(num:number)
 }
 
 addtwo(2);
+
+function toupper(str:string):string
+{
+    return str.toUpperCase();
+}
+
+
+//promise datatype
+async function getFavoriteNumber(): Promise<number> {
+  return 26;
+}
+
+// The parameter's type annotation is an object type
+function printCoord(pt: { x: number; y: number }):void {
+    console.log("The coordinate's x value is " + pt.x);
+    console.log("The coordinate's y value is " + pt.y);
+  }
+  printCoord({ x: 3, y: 7 });
+const meher = (pt: { x: number; y: number }): void => {
+    // Function body goes here
+};
+
+
+function createUser({name:string})
+{
+
+}
+let user1={name:"meher",email:"k@gmail.com"}
+createUser(user1)
+
+//types
+
+type Point={
+    x:number,
+    y:number
+}
