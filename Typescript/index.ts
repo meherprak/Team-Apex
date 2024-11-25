@@ -34,9 +34,9 @@ function toupper(str:string):string
 
 
 //promise datatype
-async function getFavoriteNumber(): Promise<number> {
-  return 26;
-}
+// async function getFavoriteNumber(): Promise<number> {
+//   return 26;
+// }
 
 // The parameter's type annotation is an object type
 function printCoord(pt: { x: number; y: number }):void {
@@ -61,4 +61,93 @@ createUser(user1)
 type Point={
     x:number,
     y:number
+}
+
+
+// arrays
+const   superheros:string[] =[];
+
+superheros.push("spiderman")
+
+
+type User={
+    name:string
+    isActive:boolean
+}
+
+
+const allUsers:User[]=[]
+
+allUsers.push({name:"meher",isActive:true});
+
+
+
+//union
+
+let score:number|string=33
+
+score=44
+score="meher"
+
+type use1={
+    name:string
+    email:string
+    no:number
+    role:string
+}
+
+type admin={
+
+    name:string
+    no:number
+}
+
+let meherprakash:use1|admin={name:"kmeherprakash",email:"k@gmail.com",no:9347354274,role:"user"}
+
+meherprakash={name:"kmp",no:1122336655}
+
+
+function dbid (id:number|string):number|string{
+
+    if(typeof id ==="string")
+        return id;
+    else
+        return id;
+
+}
+
+const data :(number|string)[]=["1,2",3]  // data can have number strings or both
+
+const data2:number[]|string[]=[1,2,3] //data can be number or strings but not both
+
+
+//declaring constant values
+
+const pi:3.14=3.14;
+
+//pi=5  error not possible
+
+
+//tuples
+const tuser :[string,number] =[]
+
+
+//enums
+
+enum seatchoice{
+    AISLE,
+    MIDDLE,
+    WINDOW
+}
+
+
+//INTERFACES
+
+interface USer{
+
+    readonly id:number,
+    name:string,
+
+    setTrial():string
+
 }
